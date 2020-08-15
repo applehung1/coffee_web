@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>客服表單</title>
+</head>
+	
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-food.css">
+
+
+<!--連結顏色-->	
+<!--網底頁-->		
+<style>
+	html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "微軟正黑體"}
+	
+
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	a:hover {
+		color: blue;
+		text-decoration: none;
+	}
+	a:active {
+		color: black;
+		text-decoration: none;
+	}
+	
+
+</style>
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			document.getElementById(cityName).style.display = "block";  
+		}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}	
+</script>
+
+
+<body vlink="black" >	
+
+<!--上方選單-->
+
+	<table width="100%" cellpadding="10">
+		<tr>
+			<td><a href="首頁_人氣商品.html" class="w3-bar-item w3-button"><img src="logo.png"width=120 height=100/></a></td>
+			<td align="right" valign="bottom">
+				<form>
+					<input class="w3-border w3-round" type="text" name="搜尋" size="20">
+					<input class="w3-border w3-round" type="button" value="搜尋">
+				</form>	
+			</td>
+		</tr>
+	</table>
+	
+	<div class="w3-bar w3-yellow w3-large">
+		<a href="首頁_人氣商品.html" class="w3-bar-item w3-button">首頁</a>
+		<a href="關於我們.html" class="w3-bar-item w3-button">關於我們</a>
+		<a href="所有商品專區.html" class="w3-bar-item w3-button">所有商品</a>
+		<a href="所有商品專區.html" class="w3-bar-item w3-button">人氣商品</a>
+		<a href="新品專區.html" class="w3-bar-item w3-button">新品上市</a>
+		<a href="活動專區.html" class="w3-bar-item w3-button">活動專區</a>		
+		<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-right">會員登入</button>
+		<a href="#" class="w3-bar-item w3-button w3-teal w3-right">購物車</a>		
+	</div>
+	
+<!--彈跳登入窗口-->
+	
+	<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-card-4 w3-text-teal"  style="width:45%">
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="w3-button w3-display-topright">&times;</span>
+			<form class="w3-container w3-card-4" >
+				<h2>會員登入</h2>      
+				<label><b>帳號</b></label>
+				<p>
+				<input class="w3-input w3-border w3-round-large" name="帳號" type="text"></p>
+				<p> 
+				<label><b>密碼</b></label>
+				<input class="w3-input w3-border w3-round-large" name="密碼" type="text"></p>
+				<p>
+				<a href="#"><b>忘記密碼</b></a></p>
+				<p>
+				<p>
+				<a href="#"><b>加入會員</b></a></p>
+				<p>
+				<button class="w3-btn w3-teal">登入</button></p>
+			</form>
+		</div>
+	</div>
+	
+	
+<!--客服表單-->	
+<div class="w3-row ">
+	<div class="w3-third w3-container w3-food-butter">
+	  <img width="100%" height="100%" src="標語.png"/>
+	</div>
+
+	<div class="w3-twothird w3-container">
+	  <h2>線上客服</h2>
+	  <hr/>
+	  <div class="w3-row-padding" >
+		<div class="w3-col" style="width:25%" >
+			<label><b>姓氏</b></label>
+			<input class="w3-input w3-border w3-round w3-hover-green" type="text">		
+		</div>
+		<div class="w3-col" style="width:25%">
+			<label><b>名字</b></label>
+			<input class="w3-input w3-border w3-round w3-hover-green" type="text" >
+		</div>		
+		
+	</div>
+	
+	<form class="w3-container">
+	  <p><label><b>連絡電話</b></label></p>	
+	  <p><input class="w3-input w3-border w3-round w3-hover-green" type="text" style="width:35%"></p>
+	  <p><label><b>電子信箱</b></label></p>	
+	  <p><input class="w3-input w3-border w3-round w3-hover-green" type="text" style="width:40%"></p>
+	  <p><label><b>意見類別</b></label></p>	
+	  <p><select class="w3-select w3-border w3-round w3-hover-green" name="option" style="width:40%">
+		  <option value="" disabled selected>請選擇</option>
+		  <option value="1">商品相關</option>
+		  <option value="2">購物相關</option>
+		  <option value="3">其他</option>
+	  </select></p>
+	  
+	  <p><label><b>意見回饋</b></label></p>	
+	  <p><textarea rows="5" class="w3-input w3-border w3-round w3-hover-green" style="resize:none "></textarea></p>
+	  <p><button class="w3-btn w3-white w3-border w3-round">送出</button></p>
+	</form>  	
+	</div>
+	
+</div>
+
+	
+	
+	
+
+	
+	
+	 
+	
+	  
+	  
+	
+
+	
+	
+
+<!--網底頁-->
+	
+	<table  width="100%" class="w3-table w3-light-grey">
+		<tr>
+			<td width="25%"></p></td>
+			<td valign="top" width="20%">
+				<a href="所有商品專區.html"><b>所有商品</b></a>
+				<a href="所有商品專區.html"><br>咖啡勺</a>				
+				<a href="所有商品專區.html"><br>磨豆機</a>
+				<a href="所有商品專區.html"><br>細口壺</a>
+				<a href="所有商品專區.html"><br>濾杯</a>
+				<a href="所有商品專區.html"><br>咖啡杯</a>
+				<a href="所有商品專區.html"><br>濾紙</a>				
+				<a href="所有商品專區.html"><br>咖啡豆</a>
+			</td>
+			<td valign="top" width="20%">
+				<a href="人氣專區.html"><b>人氣商品</b></a>
+				<a href="新品專區.html"><br><b>新品上市</b></a>				
+				<a href="活動專區.html"><br><b>活動專區</b></a>
+			</td>
+			<td valign="top" >
+				<a href="關於我們.html"><b>關於我們</b></a>
+				<br><b>聯絡我們</b>
+				<a href="客服表單.html"><br>線上客服</a>			
+				<br>地址：300新竹市東區大學路1001號
+				<br>電話：03-571-2121
+			</td>
+		</tr>
+		
+	
+	</table>	
+	
+</body>
+</html>
+
+
+
+
+  

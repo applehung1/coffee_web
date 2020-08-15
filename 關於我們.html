@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>關於我們</title>
+</head>
+	
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-food.css">
+
+
+<!--連結顏色-->	
+<!--網底頁-->		
+<style>
+	html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "微軟正黑體"}
+	
+
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	a:hover {
+		color: blue;
+		text-decoration: none;
+	}
+	a:active {
+		color: black;
+		text-decoration: none;
+	}
+	
+	
+</style>
+
+<body vlink="black" >	
+
+<!--up框框-->
+	<table width="100%" cellpadding="10">
+		<tr>
+			<td><a href="首頁_人氣商品.html" class="w3-bar-item w3-button"><img src="logo.png"width=120 height=100/></td>
+			<td align="right" valign="bottom">
+				<form>
+					<input class="w3-border w3-round" type="text" name="搜尋" size="20">
+					<input class="w3-border w3-round" type="button" value="搜尋">
+				</form>	
+			</td>
+		</tr>
+	</table>	
+<div class="w3-row ">
+	<div class="w3-bar w3-yellow w3-large">
+		<a href="首頁_人氣商品.html" class="w3-bar-item w3-button">首頁</a>
+		<a href="關於我們.html" class="w3-bar-item w3-button">關於我們</a>
+		<a href="所有商品專區.html" class="w3-bar-item w3-button">所有商品</a>
+		<a href="人氣專區.html" class="w3-bar-item w3-button">人氣商品</a>
+		<a href="新品專區.html" class="w3-bar-item w3-button">新品上市</a>
+		<a href="活動專區.html" class="w3-bar-item w3-button">活動專區</a>		
+		<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-right">會員登入</button>
+		<a href="#" class="w3-bar-item w3-button w3-teal w3-right">購物車</a>		
+	</div>			
+	
+	
+	
+	
+<!--彈跳登入窗口-->
+	
+	<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-card-4 w3-text-teal"  style="width:45%">
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="w3-button w3-display-topright">&times;</span>
+			<form class="w3-container w3-card-4" >
+				<h2>會員登入</h2>      
+				<label><b>帳號</b></label>
+				<p>
+				<input class="w3-input w3-border w3-round-large" name="帳號" type="text"></p>
+				<p> 
+				<label><b>密碼</b></label>
+				<input class="w3-input w3-border w3-round-large" name="密碼" type="text"></p>
+				<p>
+				<a href="#"><b>忘記密碼</b></a></p>
+				<p>
+				<p>
+				<a href="#"><b>加入會員</b></a></p>
+				<p>
+				<button class="w3-btn w3-teal">登入</button></p>
+			</form>
+		</div>
+	</div>
+		
+	</table>
+<!--內容介紹-->	
+<div style="overflow-x:auto ">
+	<table style="background-image:url(about_us.png);width:1167px;height:700px;"align="center";border="1"; > 	
+       <tr><td colspan="3" align="center"><b><big><big><font color="#097805" size="18" face="monospace">ABOUT US</font></big></big></b></td></tr>
+       <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">經營理念</span></font></big></b></td><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">核心思想</span></font></big></b></td></tr>
+	   <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#FFFFFF;">百分百自有品牌、原創設計強化競爭力 <br>  青春、初熟、輕熟三軌並行，多樣化富市場性 <br>  營運展業速度快、開發設計準度精 <br>  產銷一體、成本降低、共享獲利 <br>  注重團隊、培植專業 <br> 確立目標、明訂指標</span></font></big></b></td><td align="center"><b><big><font face="微軟正黑體"><span style="color:#FFFFFF;">穿出年輕的獨特風格<br> 打造垂手可得的時尚</span></font></big></b></td></tr>
+	   
+	   <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">公司願景</span></font></big></b></td><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">公司使命</span></font></big></b></td></tr>
+	   <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#FFFFFF;">新年輕時尚運動，加添自信<br> 加深魅力、加倍 Charming！</span></font></big></b></td><td align="center"><big><b><font face="微軟正黑體"><span style="color:#FFFFFF;">同步國際流行脈動<br> 全面原創DNA啟動樹立年輕世代新風尚<br> 台灣時裳風潮由50% FIFTY PERCENT趨動</span></font></big></b></td></tr>
+	   
+	   <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">市場定位</span></font></big></b></td><td align="center"><b><big><font face="微軟正黑體"><span style="color:#5CBE71;">品牌承諾</span></font></big></b></td></tr>
+	   <tr><td align="center"><b><big><font face="微軟正黑體"><span style="color:#FFFFFF;">台灣年輕平價服飾的首席時裳品牌 <br>  2012-2014 第一階段策略：<br> 風靡台灣年輕世代的平價流行服飾第一指名品牌</span></font></big></b></td><td align="center"><b><big><font face="微軟正黑體"><span style="color:#FFFFFF;">革新輕齡時裳體驗<br> 打造流行服飾殿堂 <br>  塑造個人清新風格<br> 嶄露華人注目風采</span></font></big></b></td></tr>
+	   
+	   
+</table>
+</div>
+	
+<!--網底頁-->
+	
+	
+	<table  width="100%" class="w3-table w3-light-grey">
+		<tr>
+			<td width="25%"></p></td>
+			<td valign="top" width="20%">
+				<a href="所有商品專區.html"><b>所有商品</b></a>
+				<a href="咖啡勺全部.html"><br>咖啡勺</a>				
+				<a href="磨豆機全部.html"><br>磨豆機</a>
+				<a href="細口壺全部.html"><br>細口壺</a>
+				<a href="濾杯全部.html"><br>濾杯</a>
+				<a href="咖啡杯全部.html"><br>咖啡杯</a>
+				<a href="濾紙全部.html"><br>濾紙</a>				
+				<a href="咖啡豆全部.html"><br>咖啡豆</a>
+			</td>
+			<td valign="top" width="20%">
+				<a href="人氣專區.html"><b>人氣商品</b></a>
+				<a href="新品專區.html"><br><b>新品上市</b></a>				
+				<a href="活動專區.html"><br><b>活動專區</b></a>
+			</td>
+			<td valign="top" >
+				<a href="關於我們.html"><b>關於我們</b></a>
+				<br><b>聯絡我們</b>
+				<a href="客服表單.html"><br>線上客服</a>			
+				<br>地址：300新竹市東區大學路1001號
+				<br>電話：03-571-2121
+			</td>
+		</tr>
+		
+	
+	</table>	
+</body>
+</html>
+
+
+
+
+  

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>咖啡勺a (12)</title>
+</head>
+
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-food.css">
+	
+	
+<!--連結顏色-->	
+<!--網底頁-->	
+<style>
+	html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "微軟正黑體"}
+	
+	
+	
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	a:hover {
+		color: blue;
+		text-decoration: none;
+	}
+	a:active {
+		color: black;
+		text-decoration: none;
+	}
+	
+</style>
+
+<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			document.getElementById(cityName).style.display = "block";  
+		}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}	
+</script>
+
+
+<body vlink="black">
+
+	<!--up框框-->
+	<table width="100%" cellpadding="10">
+		<tr>
+			<td><a href="首頁_人氣商品.html" class="w3-bar-item w3-button"><img src="logo.png"width=120 height=100/></td>
+			<td align="right" valign="bottom">
+				<form>
+					<input class="w3-border w3-round" type="text" name="搜尋" size="20">
+					<input class="w3-border w3-round" type="button" value="搜尋">
+				</form>	
+			</td>
+		</tr>
+	</table>
+	
+<div class="w3-row ">
+	<div class="w3-bar w3-yellow w3-large">
+		<a href="首頁_人氣商品.html" class="w3-bar-item w3-button">首頁</a>
+		<a href="關於我們.html" class="w3-bar-item w3-button">關於我們</a>
+		<a href="所有商品專區.html" class="w3-bar-item w3-button">所有商品</a>
+		<a href="人氣專區.html" class="w3-bar-item w3-button">人氣商品</a>
+		<a href="新品專區.html" class="w3-bar-item w3-button">新品上市</a>
+		<a href="活動專區.html" class="w3-bar-item w3-button">活動專區</a>		
+		<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-right">會員登入</button>
+		<a href="#" class="w3-bar-item w3-button w3-teal w3-right">購物車</a>		
+	</div>
+	
+<!--彈跳登入窗口-->
+
+	<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-card-4 w3-text-teal"  style="width:45%">
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="w3-button w3-display-topright">&times;</span>
+			<form class="w3-container w3-card-4" >
+				<h2>會員登入</h2>      
+				<label><b>帳號</b></label>
+				<p>
+				<input class="w3-input w3-border w3-round-large" name="帳號" type="text"></p>
+				<p> 
+				<label><b>密碼</b></label>
+				<input class="w3-input w3-border w3-round-large" name="密碼" type="text"></p>
+				<p>
+				<a href="#"><b>忘記密碼</b></a></p>
+				<p>
+				<p>
+				<a href="#"><b>加入會員</b></a></p>
+				<p>
+				<button class="w3-btn w3-teal">登入</button></p>
+			</form>
+		</div>
+	</div>
+
+<!--商品詳情-->	
+	
+	
+	
+	
+ <!--左框框 細項500 商品詳情900-->
+	
+	<div class="w3-row  ">
+	<div class=" w3-container w3-col w3-food-butter"  style="width:15%" >
+		<p/>
+		<a href="活動專區.html"><h4><font color="#494848"><b>活動專區</b></font></h4><p/></a>
+		<a href="新品專區.html"><h4><font color="#494848"><b>新品專區</b></font></h4><p/></a>
+		<a href="人氣專區.html"><h4><font color="#494848"><b>人氣專區</b></font></h4><p/></a>
+		<a href="所有商品專區.html"><h4><font color="red"><b>所有商品</b></font></h4><p/></a>
+		<table  width="80%" align="center" >
+			<tr><td>												
+				<button onclick="myFunction('Demo1')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡勺</b></font></button>
+				<div id="Demo1" class="w3-hide">
+				  <a class="w3-button w3-block " href="木質咖啡勺.html"><font color="#494848"><b>木質</b></font></a>
+				  <a class="w3-button w3-block " href="不鏽鋼咖啡勺.html"><font color="#494848"><b>不鏽鋼</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo2')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>磨豆機</b></font></button>
+				<div id="Demo2" class="w3-hide">
+				  <a class="w3-button w3-block " href="磨豆機手動.html"><font color="#494848"><b>手動</b></font></a>
+				  <a class="w3-button w3-block " href="磨豆機電動.html"><font color="#494848"><b>電動</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo3')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>細口壺</b></font></button>
+				<div id="Demo3" class="w3-hide">
+				  <a class="w3-button w3-block " href="細口壺1.2L.html"><font color="#494848"><b>1.2L</b></font></a>
+				  <a class="w3-button w3-block " href="細口壺0.8L.html"><font color="#494848"><b>0.8L</b></font></a>
+				  <a class="w3-button w3-block " href="細口壺1.0L.html"><font color="#494848"><b>1.0L</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-left-align"><font color="#494848"><b>濾杯</b></font></button>
+				<div id="Demo4" class="w3-hide">
+				  <a class="w3-button w3-block " href="濾杯免濾紙.html"><font color="#494848"><b>免濾紙</b></font></a>
+				  <a class="w3-button w3-block " href="濾杯單孔.html"><font color="#494848"><b>單孔</b></font></a>
+				  <a class="w3-button w3-block " href="濾杯多孔.html"><font color="#494848"><b>多孔</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo5')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡杯</b></font></button>
+				<div id="Demo5" class="w3-hide">
+				  <a class="w3-button w3-block " href="塑膠咖啡杯.html"><font color="#494848"><b>塑膠</b></font></a>
+				  <a class="w3-button w3-block " href="咖啡杯陶瓷.html"><font color="#494848"><b>陶瓷</b></font></a>
+				  <a class="w3-button w3-block " href="不鏽鋼咖啡杯.html"><font color="#494848"><b>不鏽鋼</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo6')" class="w3-button w3-block w3-left-align"><font color="#494848"><b>濾紙</b></font></button>
+				<div id="Demo6" class="w3-hide">
+				  <a class="w3-button w3-block " href="濾紙50入.html"><font color="#494848"><b>50入</b></font></a>
+				  <a class="w3-button w3-block " href="濾紙100入.html"><font color="#494848"><b>100入</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo7')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡豆</b></font></button>
+				<div id="Demo7" class="w3-hide">
+				  <a class="w3-button w3-block " href="咖啡豆深培.html"><font color="#494848"><b>深培</b></font></a>
+				  <a class="w3-button w3-block " href="咖啡豆淺培.html"><font color="#494848"><b>淺培</b></font></a>
+				</div>				
+			</td></tr>
+			<tr><td height=900></td></tr>	
+		</table>
+     </div>		
+	
+
+
+<!--商品詳情rest-->
+	
+	 <div  class="w3-rest w3-container " style="overflow-x:auto "> 
+		</p>
+		<table align="center" width="100%"  cellpadding="5">
+			<tr>
+				<td width="50%"><img height="350" width="350" src="a (12).jpg"/></td>	
+				<td width="50%">
+					<h3><font color="red"><b>金屬咖啡勺 1入</b></font></h3>
+					<h4><br>
+					金屬材質
+					<br>
+					不殘留其他物質
+					<br>
+					
+					</h4>
+					
+					 <div class="w3-row">
+						<div class="w3-col" style="width:40%"><p><h4><b>NT$149/個</b></h4></p></div>
+						<div class="w3-col" style="width:30%">
+							<p><select  class="w3-select w3-border w3-round " name="option">
+							  <option value="" disabled selected>數量</option>
+							  <option value="1">1</option>
+							  <option value="2">2</option>
+							  <option value="3">3</option>
+							</select></p>						
+						</div>
+						
+					</div>
+					<div class="w3-row">
+						<div class="w3-col" style="width:40%"><p></p></div>
+						<div class="w3-col" style="width:30%">
+								<button class="w3-btn w3-teal">放入購物車</button></div>
+						<div class="w3-col" style="width:30%">
+								<button class="w3-btn w3-teal">立即結帳</button></div>	
+					</div>										
+				</td>	
+			</tr>
+		</table>
+		<p/>
+		
+		<div class="w3-container">
+		  <p>點圖放大</p>
+		  <div class="w3-row-padding">			
+			  <img class="w3-border" src="b(1).jpg" style="width:8%;cursor:zoom-in "
+			  onclick="document.getElementById('modal01').style.display='block'">
+			  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+				  <img src="b(1).jpg" style="width:100%">
+				</div>
+			  </div>
+			  
+			 <img class="w3-border" src="b(2).jpg" style="width:8%;cursor:zoom-in"
+			  onclick="document.getElementById('modal02').style.display='block'">
+			 <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+				  <img src="b(2).jpg" style="width:100%">
+				</div>
+			 </div>  
+			  
+			 <img class="w3-border" src="b(3).jpg" style="width:10%;cursor:zoom-in"
+			  onclick="document.getElementById('modal03').style.display='block'">
+			 <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+				  <img src="b(3).jpg" style="width:100%">
+				</div>
+			 </div>   
+			 
+			 <img class="w3-border"src="b(4).jpg" style="width:10.5%;cursor:zoom-in"
+			  onclick="document.getElementById('modal04').style.display='block'">
+			 <div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+				  <img src="b(4).jpg" style="width:100%">
+				</div>
+			 </div>  
+			  
+					
+		  </div>
+		</div>
+		<p/>
+		<map name="photo">
+			<area shape="rect" coords="0,0,188,267" href="a (9).html">
+			<area shape="rect" coords="188,0,376,267" href="a (7).html">
+			<area shape="rect" coords="376,0,566,267" href="a (8).html">
+			<area shape="rect" coords="566,0,750,267" href="a (2).html">
+
+		</map>
+		<map name="photo2">
+			<area shape="rect" coords="0,0,188,267" href="a (3).html">
+			<area shape="rect" coords="188,0,376,267" href="a (4).html">
+			<area shape="rect" coords="376,0,566,267" href="a (5).html">
+			<area shape="rect" coords="566,0,750,267" href="a (1).html">
+
+		</map>
+		<div class="w3-row-padding">
+			<b>他們也買了...</b>
+			<p/>
+			<div class="w3-content w3-display-container">
+				<img class="mySlides" src="c(6).jpg" usemap="#photo" >
+				<img class="mySlides" src="c(7).jpg" usemap="#photo2">
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+			<script>
+				var slideIndex = 1;
+				showDivs(slideIndex);
+
+				function plusDivs(n) {
+				  showDivs(slideIndex += n);
+				}
+
+				function showDivs(n) {
+				  var i;
+				  var x = document.getElementsByClassName("mySlides");
+				  if (n > x.length) {slideIndex = 1}    
+				  if (n < 1) {slideIndex = x.length}
+				  for (i = 0; i < x.length; i++) {
+					 x[i].style.display = "none";  
+				  }
+				  x[slideIndex-1].style.display = "block";  
+				}
+			</script>
+		</div>
+		<p/>
+		
+		<div class="w3-bar w3-black">
+		  <button class="w3-bar-item w3-button" onclick="openCity('產品特色')">產品特色</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('商品規格')">商品規格</button>
+		  <button class="w3-bar-item w3-button" onclick="openCity('退貨需知')">退貨需知</button>
+		</div>
+
+		<div id="產品特色" class="w3-container city">
+		  <h2>產品特色</h2>
+		  <li>獨特的冰塊漏斗設計，享受濾泡式冰咖啡新風味</li>
+		  <li>多孔滴濾器設計，讓咖啡能均勻迅速的冷卻</li>
+		  <li>可製冰咖啡，亦可製熱咖啡，冷熱兩用</li>
+		  <li>瓶身刻度設計，飲品容量一目了然</li>
+		  <li>採用耐熱玻璃製成，可耐熱至120℃</li>
+		  <li>日本製造、品質保證</li><p/>  
+		</div>
+
+		<div id="商品規格" class="w3-container city" style="display:none">
+		  <h2>商品規格</h2>
+		  <li>品牌：HARIO</li> 
+		  <li>型號：VIC-02B</li>
+		  <li>尺寸：約18x12x22 cm</li>
+		  <li>容量：700ml</li> 
+		  <li>材質：耐熱玻璃、聚丙烯</li>
+		  <li>耐熱：120℃</li>   
+		  <li>產地：日本</li> 
+		  <li>注意事項：本產品不包含圖中玻璃杯</li><p/>
+		</div>
+
+		<div id="退貨需知" class="w3-container city" style="display:none">
+		  <h2>退貨需知</h2>
+		  <p>線上購物的消費者，都可以依照消費者保護法的規定，享有商品貨到次日起七天猶豫期的權益。但猶豫期並非試用期，請留意，您所退回的商品必須回復原狀（須回復至商品到貨時的原始狀態）並且保持完整包裝（包括商品本體、配件、贈品、保證書、原廠包裝及所有附隨文件或資料的完整性），切勿缺漏任何配件或損毀原廠外盒。
+			如果您所購買的商品是屬於易於腐敗之商品、保存期限較短之商品、客製化商品、報紙、期刊、雜誌，依據消費者保護法之規定，於收受商品後將無法享有七天猶豫期之權益且不得辦理退貨。
+			如果您所購買的是影音商品、電腦軟體或個人衛生用品等一經拆封即無法回復原狀的商品，在您還不確定是否要辦理退貨以前，請勿拆封，一經拆封則依消費者保護法之規定，無法享有七天猶豫期之權益且不得辦理退貨。
+			如果您所購買的是非以有形媒介提供之數位內容或一經提供即為完成之線上服務，一經您事先同意後始提供者，依消費者保護法之規定，您將無法享有七天猶豫期之權益且不得辦理退貨。
+			若您需辦理退貨，請利用顧客中心「查訂單」或「退訂/退款查詢」的「退訂/退貨」功能填寫申請，我們將於接獲申請之次日起1個工作天內檢視您的退貨要求，檢視完畢後將以E-mail回覆通知您，並將委託本公司指定之宅配公司，在5個工作天內透過電話與您連絡前往取回退貨商品。請您保持電話暢通，並備妥原商品及所有包裝及附件，以便於交付予本公司指定之宅配公司取回（宅配公司僅負責收件，退貨商品仍由特約廠商進行驗收），宅配公司取件後會提供簽收單據給您，請注意留存。
+			退回商品時，請以本公司或特約廠商寄送商品給您時所使用的外包裝（紙箱或包裝袋），原封包裝後交付給前來取件的宅配公司；如果本公司或特約廠商寄送商品給您時所使用的外包裝（紙箱或包裝袋）已經遺失，請您在商品原廠外盒之外，再以其他適當的包裝盒進行包裝，切勿任由宅配單直接粘貼在商品原廠外盒上或書寫文字。
+			提醒您，原廠外盒及原廠包裝都屬於商品的一部分，若有遺失、毀損或缺件，可能影響您退貨的權益，也可能依照損毀程度扣除為回復原狀所必要的費用。
+			若因您要求退貨或換貨、或因本公司無法接受您全部或部分之訂單、或因契約解除或失其效力，而需為您辦理退款事宜時，您同意本公司得代您處理發票或折讓單等相關法令所要求之單據，以利本公司為您辦理退款。
+			本公司收到您所提出的申請後，若經確認無誤，將依消費者保護法之相關規定，返還您已支付之對價（含信用卡交易），退款日當天會再發送E-mail通知函給您。</p>
+		</div>		
+	</div>	
+</div>
+	
+	
+<!--網底頁-->
+	
+	<table  width="100%" class="w3-table w3-light-grey">
+		<tr>
+			<td width="25%"></p></td>
+			<td valign="top" width="20%">
+				<a href="所有商品專區.html"><b>所有商品</b></a>
+				<a href="所有商品專區.html"><br>咖啡勺</a>				
+				<a href="所有商品專區.html"><br>磨豆機</a>
+				<a href="所有商品專區.html"><br>細口壺</a>
+				<a href="所有商品專區.html"><br>濾杯</a>
+				<a href="所有商品專區.html"><br>咖啡杯</a>
+				<a href="所有商品專區.html"><br>濾紙</a>				
+				<a href="所有商品專區.html"><br>咖啡豆</a>
+			</td>
+			<td valign="top" width="20%">
+				<a href="人氣專區.html"><b>人氣商品</b></a>
+				<a href="新品專區.html"><br><b>新品上市</b></a>				
+				<a href="活動專區.html"><br><b>活動專區</b></a>
+			</td>
+			<td valign="top" >
+				<a href="關於我們.html"><b>關於我們</b></a>
+				<br><b>聯絡我們</b>
+				<a href="客服表單.html"><br>線上客服</a>			
+				<br>地址：300新竹市東區大學路1001號
+				<br>電話：03-571-2121
+			</td>
+		</tr>
+		
+	
+	</table>	
+	
+	
+</body>
+</html>

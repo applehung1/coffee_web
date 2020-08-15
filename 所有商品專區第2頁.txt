@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"></meta>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="w3.css">
+	<link rel="stylesheet" href="w3-colors-food.css">
+	<style>
+     ol {
+	list-style-type: none;
+	width: 200px;
+    height: 1500px;
+    margin : 20px;
+	padding: 20px;
+	
+       }
+	ul{
+	  list-style-type:none;
+	    }
+	.left {
+    margin: ;
+    width: 60%;
+    padding: 10px;
+            }
+			html, body, h1, h2, h3, h4, h5, h6 {
+    font-family: "微軟正黑體"}
+	
+	
+	
+	a:link {
+		color: black;
+		text-decoration: none;
+	}
+	a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	a:hover {
+		color: blue;
+		text-decoration: none;
+	}
+	a:active {
+		color: black;
+		text-decoration: none;
+	}
+	</style>
+	<script>
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+
+function openCity(cityName) {
+			var i;
+			var x = document.getElementsByClassName("city");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			document.getElementById(cityName).style.display = "block";  
+		}
+
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}	
+</script>
+
+</head>
+<body>
+	<center><table   width="1167px"  >
+		<tr>
+			<td><a href="首頁_人氣商品.html" class="w3-bar-item w3-button"><img src="logo.png"width=90 height=70/></a></td>
+			<td  align="right" valign="bottom">
+				<form>
+					<input class="w3-border w3-round" type="text" name="搜尋" size="20">
+					<input class="w3-border w3-round" type="button" value="搜尋">
+				</form>	
+			</td>
+		</tr>
+		
+		
+	</table></center>
+	
+	<center><table  style="width:1200px " class="w3-table w3-middle "  >
+		<tr>
+			
+			<td colspan=2    >
+			<div class="w3-bar w3-green w3-large " style="width:1167px;">
+				<a href="首頁_人氣商品.html" class="w3-bar-item w3-button">首頁</a>
+				<a href="關於我們.html" class="w3-bar-item w3-button">關於我們</a>
+				<a href="活動專區.html" class="w3-bar-item w3-button">活動專區</a>	
+				<a href="新品專區.html" class="w3-bar-item w3-button">新品上市</a>
+				<a href="人氣專區.html" class="w3-bar-item w3-button">人氣商品</a>
+				<a href="所有商品專區.html" class="w3-bar-item w3-button">所有商品</a>	
+				<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-green w3-right ">會員登入</button>
+				<a href="#" class="w3-bar-item w3-button w3-green w3-right">購物車</a>		
+			</div>
+			</td>
+		</tr>
+		
+	</table></center>
+	
+<!--彈跳登入窗口-->
+	
+	<div id="id01" class="w3-modal">
+		<div class="w3-modal-content w3-card-4 w3-text-teal"  style="width:45%">
+			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="w3-button w3-display-topright">&times;</span>
+			<form class="w3-container w3-card-4" >
+				<h2>會員登入</h2>      
+				<label><b>帳號</b></label>
+				<p>
+				<input class="w3-input w3-border w3-round-large" name="帳號" type="text"></p>
+				<p> 
+				<label><b>密碼</b></label>
+				<input class="w3-input w3-border w3-round-large" name="密碼" type="text"></p>
+				<p>
+				<a href="#"><b>忘記密碼</b></a></p>
+				<p>
+				<p>
+				<a href="#"><b>加入會員</b></a></p>
+				<p>
+				<button class="w3-btn w3-teal">登入</button></p>
+			</form>
+		</div>
+	</div>
+		
+	</table>	
+	
+	
+    <blockquote>
+	<div class="w3-third w3-container  "  style="width:250px">
+		<p/>
+		<a href="活動專區.html"><h4><font color="#494848"><b>活動專區</b></font></h4><p/></a>
+		<a href="新品專區.html"><h4><font color="#494848"><b>新品專區</b></font></h4><p/></a>
+		<a href="人氣專區.html"><h4><font color="#494848"><b>人氣專區</b></font></h4><p/></a>
+		<a href="所有商品專區.html"><h4><font color="brown"><b>所有商品<hr></b></h4><p/></a>
+		<table  width="80%" align="center" >
+			<tr><td>							
+				<button onclick="myFunction('Demo1')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡勺</b></font></button>
+				<div id="Demo1" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>木質</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>不鏽鋼</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo2')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>磨豆機</b></font></button>
+				<div id="Demo2" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>手動</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>電動</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo3')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>細口壺</b></font></button>
+				<div id="Demo3" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>1.2L</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>0.8L</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>1.0L</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo4')" class="w3-button w3-block w3-left-align"><font color="#494848"><b>濾杯</b></font></button>
+				<div id="Demo4" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>免濾紙</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>單孔</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>多孔</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo5')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡杯</b></font></button>
+				<div id="Demo5" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>塑膠</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>陶瓷</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>不鏽鋼</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo6')" class="w3-button w3-block w3-left-align"><font color="#494848"><b>濾紙</b></font></button>
+				<div id="Demo6" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>20入</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>50入</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>100入</b></font></a>
+				 </div>				
+			</td></tr>
+			<tr><td>							
+				<button onclick="myFunction('Demo7')" class="w3-button w3-block  w3-left-align"><font color="#494848"><b>咖啡豆</b></font></button>
+				<div id="Demo7" class="w3-hide">
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>深培</b></font></a>
+				  <a class="w3-button w3-block " href="所有商品專區.html"><font color="#494848"><b>淺培</b></font></a>
+				</div>				
+			</td></tr>
+			<tr height="900"><td></td></tr>	
+		</table>
+     </div>		
+	</blockquote>
+
+	<div  class="w3-twothird w3-container">	
+	  <table cellpadding = 25>
+	  <tr >
+	        <td colspan= 5 align = left  ><img src="c(10).jpg"width="800" height="400"  /></td>
+	  </tr>
+	  <tr >
+	        <td colspan= 5 align = right > 產品排序：上架 新→舊 </td>
+	  </tr>
+	 <tr> 
+	        <td align="center"> <a href="商品詳情2.html"><img src="a (1).jpg"height="160" width="160"  /><br>【超商取貨】<br>1-2人份濾杯 </a></td> 
+			<td align="center"> <img src="a (2).jpg""height="160" width="160"/><br>【超商取貨】<br>1-2人份濾杯 </td> 
+			<td align="center"> <img src="a (3).jpg"height="160" width="160"/><br>【超商取貨】<br>1-2人份濾杯 </td> 
+			<td align="center"> <img src="a (4).jpg"height="160" width="160"/><br> 【超商取貨】<br>1-2人份濾杯</td> 
+			
+	  </tr>
+	  <tr align=center >
+	        <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 
+			<td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td>
+            <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 
+            <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 			
+	  </tr>
+	  <tr> 
+	        <td align="center"> <a href="商品詳情2.html"><img src="a (5).jpg"height="160" width="160"  /><br> 【超商取貨】<br>1-2人份濾杯</a></td> 
+			<td align="center"> <img src="a (6).jpg"height="160" width="160"/><br> 【超商取貨】<br>1-2人份濾杯</td> 
+			<td align="center"> <img src="a (7).jpg"height="160" width="160"/><br> 【超商取貨】<br>1-2人份濾杯</td> 
+			<td align="center"> <img src="a (8).jpg"height="160" width="160"/> <br>【超商取貨】<br>1-2人份濾杯</td> 
+			
+	  </tr>
+	  <tr align=center >
+	        <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 
+			<td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td>
+            <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 
+            <td align="center"> <a href="商品詳情2.html">優惠價:150 </a></td> 			
+	  </tr>
+		<tr>
+	      <td colspan= 5 align = right >
+		  <a href="商品詳情2.html"> [1] </a>
+		  [2]
+		  </td>
+	    </tr>
+		</table>
+	</div>
+</div>
+
+	
+<!--網底頁-->
+	
+	
+	<table  width="100%" class="w3-table w3-light-grey">
+		<tr>
+			<td width="25%"></p></td>
+			<td valign="top" width="20%">
+				<a href="所有商品專區.html"><b>所有商品</b></a>
+				<a href="所有商品專區.html"><br>咖啡勺</a>				
+				<a href="所有商品專區.html"><br>磨豆機</a>
+				<a href="所有商品專區.html"><br>細口壺</a>
+				<a href="所有商品專區.html"><br>濾杯</a>
+				<a href="所有商品專區.html"><br>咖啡杯</a>
+				<a href="所有商品專區.html"><br>濾紙</a>				
+				<a href="所有商品專區.html"><br>咖啡豆</a>
+			</td>
+			<td valign="top" width="20%">
+				<a href="人氣專區.html"><b>人氣商品</b></a>
+				<a href="新品專區.html"><br><b>新品上市</b></a>				
+				<a href="活動專區.html"><br><b>活動專區</b></a>
+			</td>
+			<td valign="top" >
+				<a href="關於我們.html"><b>關於我們</b></a>
+				<br><b>聯絡我們</b>
+				<a href="客服表單.html"><br>線上客服</a>			
+				<br>地址：300新竹市東區大學路1001號
+				<br>電話：03-571-2121
+			</td>
+		</tr>
+		
+	
+	</table>	
+
+</body>
+</html>
